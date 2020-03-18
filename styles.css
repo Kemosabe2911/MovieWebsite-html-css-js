@@ -99,7 +99,7 @@ body{
         width: 20%;
         height: 7%;
     }
-    /*#result{
-        margin-bottom: -20%;
-    }*/
+    #result{
+        margin-top: 80vh;
+    }
 }
