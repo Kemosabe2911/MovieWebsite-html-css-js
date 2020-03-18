@@ -19,7 +19,6 @@ function search(){
         a.style.marginTop="-35vh";
         b=document.getElementById("btn");
         b.style.marginTop="-35vh";
-        
         res.innerHTML="<h1>Search Results For: "+a.value+"</h1>";
         res.style.marginTop="-85vh";
         home.addEventListener("click",function(){
@@ -29,7 +28,7 @@ function search(){
             res.style.marginTop="45%";
             document.body.style.overflow="hidden";
         })
-        fetchAPI()
+        fetchAPI();
     }
 }
 function fetchAPI(){
@@ -39,7 +38,17 @@ function fetchAPI(){
     .then((data)=> {
         console.log(data);
         console.log(data.Poster);
-        
-        
-    })
+        let output=`
+        <h1 class="ttle">${data.Title}</h2>,
+        <img src=${data.Poster} class="poster">,
+        <h3 class="dtls">Year: &nbsp;${data.Year}</h3>
+        <h3 class="dtls">Released: &nbsp;${data.Released}</h3>
+        <h3 class="dtls">RunTime: &nbsp;${data.Runtime}</h3>
+        <h3 class="dtls">Genre: &nbsp;${data.Genre}</h3>
+        <h3 class="dtls">Actors: &nbsp;${data.Actors}</h3>
+        <h3 class="dtls">Writers: &nbsp;${data.Writer}</h3>
+        <p class="plot">Plot: &nbsp;${data.Plot}</p>
+        `
+        res.innerHTML=output;
+    });
 }

@@ -52,6 +52,23 @@ body{
 }*/
 #result{
     text-align: center;
+    width: 80%;
+    color: #ffffff;
+    margin-left: 10%;
+}
+#result .ttle{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#result .poster{
+    width: 50vh;
+    height: 60vh;
+}
+#result .plot{
+    font-size: 22px;
 }
 #home-btn{
     float: right;
