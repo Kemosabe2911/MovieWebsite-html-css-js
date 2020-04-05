@@ -90,9 +90,10 @@ body{
     #btn{
         width: 20%;
         height: 7%;
+        border-radius: 25px;
     }
     #srch{
-        width: 50%;
+        width: 65%;
     }
     #home-btn{
         margin-left: 5%;
