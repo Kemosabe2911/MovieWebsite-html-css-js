@@ -5,6 +5,7 @@ body{
     overflow: hidden;
     scroll-behavior: smooth;
     color: #ffffff;
+    font-size: 22px;
 }
 .img{
     width: 100%;
